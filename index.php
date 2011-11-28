@@ -16,23 +16,22 @@ include dirname(__FILE__).'/inc/header.php';
     <body>
 		<div id="wrapper">
 			<h1><?php echo TITLE; ?></h1>
-			<form action="" method="post">
+			<form action="" class="cssn_form block_form" method="post">
 				<ul>
 					<?php if(!empty($content)) : ?>
-					<li>
-						<label for="rgba_content"></label>
-						<textarea rows="8" cols="100" name="rgba_content" id="rgba_content"><?php echo $content; ?></textarea>
+					<li class="box full">
+						<textarea rows="5" cols="100" name="rgba_content" id="rgba_content"><?php echo $content; ?></textarea>
 					</li>
 					<?php endif; ?>
-				    <li>
+				    <li class="box">
 				    	<label for="rgba_color">Color ( Hexa : x6)</label>
 					    <input name="rgba_color" id="rgba_color" type="text" value="<?php echo $color; ?>" />
 				    </li>
-					<li>
+					<li class="box">
 						<label for="rgba_opacity">Opacity ( % )</label>
 					    <input name="rgba_opacity" id="rgba_opacity" type="text" value="<?php echo $opacity; ?>" />
 					</li>
-					<li>
+					<li class="box">
 						<button>Give me RGBA !</button>
 					</li>
 				</ul>

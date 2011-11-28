@@ -19,7 +19,7 @@ if(
 	$content .= 'background-color:rgba('.$col_rgba.');'."\n";
 	$content .= '-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
 	$content .= 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
-	$content .= 'zoom: 1;'."\n";
+	$content .= 'zoom:1;';
 	
 	$color = $_POST['rgba_color'];
 	$opacity = $_POST['rgba_opacity'];
