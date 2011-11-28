@@ -15,11 +15,14 @@ if(
 	$col_argb = $opacity_hexa.$color_hexa;
 	$col_rgba = hexdec(substr($color_hexa,0,2)).','.hexdec(substr($color_hexa,2,2)).','.hexdec(substr($color_hexa,4,2)).','.($_POST['rgba_opacity']/100);
 
-	$content .= 'background:none;'."\n";
-	$content .= 'background-color:rgba('.$col_rgba.');'."\n";
-	$content .= '-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
-	$content .= 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
-	$content .= 'zoom:1;';
+	$content_css = '';
+	$content_css .= 'background:none;'."\n";
+	$content_css .= 'background-color:rgba('.$col_rgba.');'."\n";
+	$content_css .= '-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
+	$content_css .= 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
+	$content_css .= 'zoom:1;';
+	
+	$content = $content_css;
 	
 	$color = $_POST['rgba_color'];
 	$opacity = $_POST['rgba_opacity'];

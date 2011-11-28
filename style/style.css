@@ -275,7 +275,7 @@ button {
 }
 
 .cssn_form .full textarea {
-	width: 600px;
+	width: 580px;
 }
 
 
@@ -319,19 +319,32 @@ Aide
 
 html {
 	position : relative;
+	background-image:url(stripe.png);
+	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAAB/ElEQVR4nO3bO5LCMBBF0QuZ979XCJkAChgj27Itqb93Ba9OddqX2+2GvqZpkp5Q6Co9oJBOqfv9rg5LrRTaLkuzFKqwlEuhB0u/FEqwTEihAcuKFOJYhqSQxbIlhSCWOSmksCxKIYJlVIrxWHalGIxlWoqRWNalGIblQIoxWD6kGIDlRoreWJ6k6IrlTIp+WP6k6ITlUooeWF6laI7lWIq2WL6laIjlXopWWBGkaIIVRIrzWHGkOIkVSoozWNGkOIwVUIpjWDGlOIAVVoq9WJGl2IUVXIp6rJSiEiulnm1jpdS7DayU+m4NK6VmLWKl1G9lrJQqVsBKqaXmWCm10j+slFrvg5VSm72wUqqmKylV3eXxeEhvKKRQCvF3lGI6paZpUoelVgptl6VZClVYyqXQg6VfCiVYJqTQgGVFCnEsQ1LIYtmSQhDLnBRSWBalEMEyKsV4LLtSDMYyLcVILOtSDMNyIMUYLB9SDMByI0VvLE9SdMVyJkU/LH9SdMJyKUUPLK9SNMdyLEVbLN9SNMRyL0UrrAhSNMEKIsV5rDhSnMQKJcUZrGhSHMYKKMUxrJhSHMAKK8VerMhS7MIKLkU9VkpRiZVSz7axUurdBlZKfbeGlVKzFrFS6rcyVkoVK2Cl1FJzrJRa6R9WSq33wUqpzV5YKVXTlZSq7g8KpS+1s4wtvAAAAABJRU5ErkJggg==);
 }
 
 body {
 	text-align : center;
+	padding-top:10px;
 }
 
 a img {
 	border : none;
 }
 
+.cssn_form textarea {
+	font-size:11px;
+}
+
 #wrapper {
-	width : 700px;
+	border:1px solid #999;
+	-moz-border-radius : 3px;
+	-webkit-border-radius : 3px;
+	-webkit-background-clip: padding-box;
+	border-radius : 3px;
+	background:#fff;
+	width : 600px;
 	margin : 0 auto;
-	padding : 10px 0;
+	padding : 10px;
 	text-align : left;
 }
