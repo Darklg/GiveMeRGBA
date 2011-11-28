@@ -1,10 +1,10 @@
 <?php
 define('TITLE','Give Me (Cross-Browser) RGBA !');
 
-$content='';
 $content_css='';
-$color='';
-$opacity='';
+$color_hexa='';
+$opacity_dec='';
+
 include dirname(__FILE__).'/inc/header.php';
 
 ?><!DOCTYPE HTML>
@@ -20,18 +20,18 @@ include dirname(__FILE__).'/inc/header.php';
 			<h1><?php echo TITLE; ?></h1>
 			<form action="" class="cssn_form block_form" method="post">
 				<ul>
-					<?php if(!empty($content)) : ?>
+					<?php if(!empty($content_css)) : ?>
 					<li class="box full">
-						<textarea rows="5" cols="100" name="rgba_content" id="rgba_content"><?php echo $content; ?></textarea>
+						<textarea rows="5" cols="100" name="rgba_content" id="rgba_content"><?php echo $content_css; ?></textarea>
 					</li>
 					<?php endif; ?>
 				    <li class="box">
 				    	<label for="rgba_color">Color (Hexa without #)</label>
-					    <input name="rgba_color" id="rgba_color" type="text" value="<?php echo $color; ?>" placeholder="336699"/>
+					    <input name="rgba_color" id="rgba_color" type="text" value="<?php echo $color_hexa; ?>" placeholder="336699"/>
 				    </li>
 					<li class="box">
 						<label for="rgba_opacity">Opacity (%)</label>
-					    <input name="rgba_opacity" id="rgba_opacity" type="text" value="<?php echo $opacity; ?>" placeholder="35" />
+					    <input name="rgba_opacity" id="rgba_opacity" type="text" value="<?php echo $opacity_dec; ?>" placeholder="35" />
 					</li>
 					<li class="box">
 						<button>Give me RGBA !</button>
