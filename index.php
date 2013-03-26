@@ -1,9 +1,6 @@
 <?php
 define('TITLE','Give Me (Cross-Browser) RGBA !');
 
-$content_css='';
-$color_hexa='';
-$opacity_dec='';
 
 include dirname(__FILE__).'/inc/header.php';
 
@@ -20,7 +17,7 @@ include dirname(__FILE__).'/inc/header.php';
 			<h1><?php echo TITLE; ?></h1>
 			<form action="" class="cssn_form block_form" method="post">
 				<ul>
-					<?php if(!empty($content_css)) : ?>
+					<?php if(!empty($content_css) && $mode == 'write') : ?>
 					<li class="box full">
 						<textarea rows="5" cols="100" name="rgba_content" id="rgba_content"><?php echo $content_css; ?></textarea>
 					</li>
