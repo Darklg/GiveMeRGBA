@@ -30,7 +30,6 @@ if(
 
 	// Filters pour IE & rgba : Appliqué via gradient
 	// Merci @ http://bricss.net/post/12423845540/working-with-8-digit-hex-colors-argb-in-internet
-	$content_css .= '-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
 	$content_css .= 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#'.$col_argb.',endColorstr=#'.$col_argb.');'."\n";
 	$content_css .= 'zoom:1;';
 
